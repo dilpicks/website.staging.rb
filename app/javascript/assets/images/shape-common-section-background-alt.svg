@@ -1,0 +1,29 @@
+<svg
+  id="shape-common-section-background-alt"
+  role="img"
+  aria-labelledby="aria-label-shape-common-section-background-alt"
+  x="0"
+  y="0"
+  width="2959"
+  height="1744"
+  viewBox="0 0 2959 1744"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <title id="aria-label-shape-common-section-background-alt">shape common section background alt</title>
+
+  <style>
+    .--color-brand-primary { fill: #ff10c7; }       <!-- Magenta/100 -->
+    .--color-brand-secondary { fill: #20b4f0; }     <!-- Sky Blue/100 -->
+    .--color-brand-tertiary { fill: #001542; }      <!-- Navy/100 -->
+    .--color-brand-tertiary-alt { fill: #ffffff; }  <!-- White -->
+    .--color-brand-blend { fill: #2808b5; }         <!-- Eggplant/100 -->
+    .--color-brand-blend-alt { fill: #7e6bd3; }     <!-- Eggplant/60 -->
+    .--color-transparent { fill: none; }            <!-- transparent -->
+  </style>
+
+  <text transform="matrix(1 0 0 1 7.1079 13.5215)" opacity="0" font-family="'MyriadPro-Regular'" font-size="12">a</text>
+
+  <path class="--color-brand-secondary" d="M2682.311 219.496c-23.388 18.916-46.59 37.738-69.699 56.281-29.352 23.388-46.031 36.713-46.031 36.713-127.005 100.262-255.128 192.697-406.173 266.123-220.558 107.251-456.211 157.102-741.716 157.102 278.33 0 525.351 44.913 751.593 136.416 36.806-14.909 73.24-30.75 109.021-48.081 224.844-109.301 402.539-253.264 574.364-392.476 32.986-26.743 65.506-52.926 98.119-78.831-.279-.186-.559-.373-.838-.652l8.05-6.502V0c-84.834 67.542-164.213 130.752-229.074 182.41-.28-.186-32.148 24.507-47.616 37.086z" shape-rendering="geometricPrecision"/>
+  <path class="--color-brand-blend" d="M2170.191 872.225c-226.149-91.503-473.17-136.416-751.593-136.416H0v272.832h1418.598c278.423 0 525.445-44.913 751.593-136.416z" shape-rendering="geometricPrecision"/>
+  <path class="--color-brand-primary" d="M2950.95 1392.358c.279-.28.559-.466.838-.652-32.613-25.904-65.133-52.088-98.119-78.831-171.825-139.211-349.52-283.175-574.364-392.476-35.781-17.332-72.215-33.172-109.021-48.081-226.242 91.503-473.263 136.416-751.593 136.416 285.505 0 521.158 49.852 741.716 157.102 151.045 73.426 279.168 165.861 406.173 266.123 0 0 16.679 13.325 46.031 36.713 23.109 18.543 46.311 37.365 69.699 56.281 15.468 12.486 47.336 37.272 47.615 37.086 64.861 51.658 144.24 114.868 229.074 182.41v-345.59l-8.049-6.501z" shape-rendering="geometricPrecision"/>
+</svg>

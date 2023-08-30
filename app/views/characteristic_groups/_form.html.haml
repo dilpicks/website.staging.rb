@@ -1,0 +1,10 @@
+= form_for @characteristic_group do |f|
+  - if @characteristic_group.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@characteristic_group.errors.count, "error")} prohibited this characteristic_group from being saved:"
+      %ul
+        - @characteristic_group.errors.full_messages.each do |message|
+          %li= message
+
+  .actions
+    = f.submit 'Save'

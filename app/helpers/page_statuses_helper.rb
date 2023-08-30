@@ -1,0 +1,2 @@
+module PageStatusesHelper
+end

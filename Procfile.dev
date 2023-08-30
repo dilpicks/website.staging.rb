@@ -1,0 +1,7 @@
+# web: bin/rails server -p 3000
+# css: rails tailwindcss:watch
+
+web: RAILS_ENV=development bundle exec puma
+# worker: bundle exec sidekiq -C config/sidekiq.yml
+# redis: redis-server
+vite: bin/vite dev

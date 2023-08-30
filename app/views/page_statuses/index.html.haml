@@ -1,0 +1,19 @@
+%h1 Listing page_statuses
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @page_statuses.each do |page_status|
+      %tr
+        %td= link_to 'Show', page_status
+        %td= link_to 'Edit', edit_page_status_path(page_status)
+        %td= link_to 'Destroy', page_status, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Page status', new_page_status_path

@@ -1,0 +1,15 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+UserAgent: *
+Disallow: /bin/
+Disallow: /config/
+Disallow: /db/
+Disallow: /doc/
+Disallow: /lib/
+Disallow: /log/
+Disallow: /spec/
+Disallow: /storage/
+Disallow: /test/
+Disallow: /tmp/
+Disallow: /vendor/
+Disallow: /sidekiq/
+Sitemap: https://renegade.bio/sitemap.xml

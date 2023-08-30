@@ -1,0 +1,19 @@
+%h1 Listing copy_blocks
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @copy_blocks.each do |copy_block|
+      %tr
+        %td= link_to 'Show', copy_block
+        %td= link_to 'Edit', edit_copy_block_path(copy_block)
+        %td= link_to 'Destroy', copy_block, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Copy block', new_copy_block_path

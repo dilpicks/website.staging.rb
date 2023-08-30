@@ -1,0 +1,19 @@
+%h1 Listing characteristic_groups
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @characteristic_groups.each do |characteristic_group|
+      %tr
+        %td= link_to 'Show', characteristic_group
+        %td= link_to 'Edit', edit_characteristic_group_path(characteristic_group)
+        %td= link_to 'Destroy', characteristic_group, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Characteristic group', new_characteristic_group_path

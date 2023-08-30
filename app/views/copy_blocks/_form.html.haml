@@ -1,0 +1,10 @@
+= form_for @copy_block do |f|
+  - if @copy_block.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@copy_block.errors.count, "error")} prohibited this copy_block from being saved:"
+      %ul
+        - @copy_block.errors.full_messages.each do |message|
+          %li= message
+
+  .actions
+    = f.submit 'Save'

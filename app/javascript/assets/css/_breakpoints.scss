@@ -1,0 +1,117 @@
+// @import './mixins';
+
+// -----------------------------------------------------------------
+// Extra small
+// - 320px devices ONLY
+// - for the really rare instances where minor tweaks are needed to support iPhone 5/SE
+// -----------------------------------------------------------------
+
+// Mobile menu layout
+@mixin mobile-menu-shown {
+  @media (max-width: 1169.9999px) {
+    @content;
+  }
+}
+
+// Desktop menu layout
+@mixin desktop-menu-shown {
+  // @media (min-width: 900px) and (max-width: 899.9999px) { @content; }
+  // @media (min-width: 900px)
+  @media (min-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 359.9999px) {
+    @content;
+  }
+}
+
+@mixin for-phone-sml-up {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin for-phone-up {
+  @media (min-width: 360px) {
+    @content;
+  }
+}
+
+@mixin for-phone-lrg-up {
+  @media (min-width: 414px) {
+    @content;
+  }
+}
+
+@mixin for-phone-lrg-tablet-up {
+  @media (min-width: 507px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-mid-up {
+  @media (min-width: 684px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-mid-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-narrow-up {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-narrow-to-mid-up {
+  @media (min-width: 1137px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-mid-up {
+  @media (min-width: 1250px) {
+    @content;
+  }
+}
+
+// Standard Layout
+@mixin for-desktop-up {
+  // @media (min-width: (0px + (($--width-content-max / ($--width-content-max * 0 + 1)) * 10px))) {
+  // @media (min-width: rem-to-px($--width-content-max)) {
+  @media (min-width: 1304px) {
+    // Original
+    @content;
+  }
+}
+
+@mixin for-desktop-wide-up {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-extra-wide-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

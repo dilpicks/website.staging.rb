@@ -1,0 +1,78 @@
+.insightly-form-container {
+  .insightly-off-screen {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  // This overrides the standard form styling
+  .insightly-inline-form {
+    flex-direction: row;
+
+    // ===========================================================================
+    // For whatever reason, combining and comma separating the placeholder styles
+    // doesn't work ¯\_(ツ)_/¯
+    // ---------------------------------------------------------------------------
+    ::-webkit-input-placeholder {
+      opacity: 1;
+    }
+
+    // Firefox 19+
+    ::-moz-placeholder {
+      opacity: 1;
+    }
+
+    // IE 10+
+    :-ms-input-placeholder {
+      opacity: 1;
+    }
+
+    // Firefox 18-
+    :-moz-placeholder {
+      opacity: 1;
+    }
+
+    ::placeholder {
+      opacity: 1;
+    }
+    // ===========================================================================
+
+    .field {
+      row-gap: 0.5rem;
+      margin-bottom: 0;
+      max-width: 41rem;
+
+      label {
+        color: $--color-theme-navy-100;
+        font: $--font-primary-300;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+
+        position: static;
+      }
+
+      input[type='email'],
+      input[type='number'],
+      input[type='password'],
+      input[type='search'],
+      input[type='tel'],
+      input[type='text'],
+      input[type='url'],
+      input[type='date'],
+      input[type='time'] {
+        background-color: transparent;
+        border-color: $--color-theme-navy-100;
+        border-radius: 0;
+        border-width: 0 0 1px 0;
+        height: auto;
+        min-height: auto;
+        padding: 1.2rem 1.2rem 1.2rem 0;
+      }
+    }
+
+    .actions {
+      align-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+}

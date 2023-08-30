@@ -1,0 +1,186 @@
+//
+// This file will be added to all scss files automatically, you don't need to import this in other files
+// Check vite.config.ts#css-preprocessorOptions
+//
+
+//---------------------------------
+//        Color variables
+//---------------------------------
+
+$white: #ffffff;
+
+$lightest-gray: #f1f1f1;
+$light-gray: #dcdcdc;
+$gray: #9aa7b0;
+
+$red: #c63040;
+$orange: #fa9334;
+$green: #007575;
+$dark: #333333;
+
+// ==========================================================================================================
+// Content & Viewport Sizing
+// ==========================================================================================================
+$--width-site-min: 32rem;
+$--width-site-max: 295.9rem; // 1680px;
+
+$--width-gutter-padding: 2rem;
+$--height-headline-gap: 2.5rem;
+
+$--width-content-min: 31rem;
+$--width-content-max: calc(126.4rem + ($--width-gutter-padding * 2)); // 1304px;
+
+// ==========================================================================================================
+// Brand & Theme Colors
+// ==========================================================================================================
+$--color-theme-eggplant-110: #2506ae; // Eggplant/110
+$--color-theme-eggplant-100: #2808b5; // Eggplant/100
+$--color-theme-eggplant-80: #5339c4; // Eggplant/80
+$--color-theme-eggplant-60: #7e6bd3; // Eggplant/60
+
+$--color-theme-sky-blue-110: #0eaae7; // Sky Blue/110
+$--color-theme-sky-blue-100: #20b4f0; // Sky Blue/100
+$--color-theme-sky-blue-80: #4dc4f2; // Sky Blue/80
+$--color-theme-sky-blue-60: #79d3f5; // Sky Blue/60
+$--color-theme-sky-blue-40: rgba(#20b5ef, 0.4);
+
+$--color-theme-magenta-110: #e807b3; // Magenta/110
+$--color-theme-magenta-100: #ff10c7; // Magenta/100
+$--color-theme-magenta-80: #ff40d2; // Magenta/80
+$--color-theme-magenta-60: #ff70dd; // Magenta/60
+
+$--color-theme-navy-100: #001542; // Navy/100
+$--color-theme-navy-90: #04284c; // Navy/90
+$--color-theme-navy-80: #365370; // Navy/80
+$--color-theme-navy-60: #687e94; // Navy/60
+
+$--color-theme-lemon-yellow-100: #fee903; // Lemon Yellow/100
+$--color-theme-lemon-yellow-80: #feed35; // Lemon Yellow/80
+$--color-theme-lemon-yellow-60: #fef268; // Lemon Yellow/60
+
+$--color-theme-light-blue-100: #e1f3f7; // Light Blue/100
+$--color-theme-light-blue-40: #f1fbfb; // Light Blue/40
+
+$--color-theme-white: #ffffff; // White
+$--color-theme-black: #000000; // Black
+$--color-theme-neutral-200: #e5e5e5; // Neutral/200
+$--color-theme-grey-300: #d1d5db; // Grey/300
+$--color-theme-grey-100: #f3f4f6; // Grey/100
+
+$--color-theme-background-primary: $--color-theme-light-blue-100; // Light Blue/100
+$--color-theme-background-secondary: $--color-theme-navy-90; // Navy/90
+$--color-theme-background-secondary-dark: $--color-theme-navy-100; // Navy/100
+
+$--color-button-background-primary: $--color-theme-eggplant-100; // Eggplant/100
+$--color-button-background-primary-hover: $--color-theme-eggplant-110; // Eggplant/110
+
+$--color-brand-primary: $--color-theme-magenta-100; // Magenta/100
+$--color-brand-secondary: $--color-theme-sky-blue-100; // Sky Blue/100
+$--color-brand-tertiary: $--color-theme-navy-90; // Navy/90
+$--color-brand-tertiary-alt: $--color-theme-white; // White/100
+$--color-brand-blend: $--color-theme-eggplant-100; // Magenta/100 + Sky Blue/100
+
+$--color-border: #ececec;
+
+// ==========================================================================================================
+// Color
+// ==========================================================================================================
+$--color-text-primary: $--color-theme-navy-100;
+
+$--color-app-background: $--color-brand-tertiary-alt;
+
+$--color-content-background: $--color-theme-background-primary;
+$--color-content-background-alt: $--color-theme-white;
+
+$--color-pre-footer-background: $--color-theme-background-primary;
+$--color-footer-background: $--color-theme-background-secondary;
+$--color-post-footer-background: $--color-theme-background-secondary-dark;
+
+$--color-menu-background: $--color-brand-tertiary-alt;
+
+$--color-menu-item: $--color-theme-background-secondary;
+$--color-menu-item-hover: $--color-theme-navy-100;
+
+// ==========================================================================================================
+// Effects
+// ==========================================================================================================
+$--box-shadow: 0rem 0rem 2rem 1rem #605f5f14;
+
+// ==========================================================================================================
+// Notice Colors
+// ==========================================================================================================
+$error: #c33 !default;
+$error-background: #fcc;
+$warn: #fd7e14 !default;
+$pending: #f6c23e !default;
+
+$notice: #6c6;
+$notice-background: #cfc;
+
+// Flash Messages
+$flash-background-default: #babbbe;
+$flash-border-default: #fff;
+$flash-color-default: #fff;
+
+$flash-background-notice: #cfc;
+$flash-border-notice: #6c6;
+$flash-color-notice: #6c6;
+
+$flash-background-alert: #fed2ad;
+$flash-border-alert: #fd7e14;
+$flash-color-alert: #fd7e14;
+
+$flash-background-error: #fcc;
+$flash-border-error: #c33;
+$flash-color-error: #c33;
+
+$timeline-year-bubble-animation-duration: 500ms;
+$timeline-year-bubble-animation-ease: cubic-bezier(0.1, 1.25, 1, 1.25);
+
+// ==========================================================================================================
+// Typography
+// ==========================================================================================================
+// --------------------------------------------------------------------------------------------------------
+// Montserrat
+// --------------------------------------------------------------------------------------------------------
+// Montserrat Thin
+$--font-primary-100: normal 100 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-100-italic: italic 100 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat ExtraLight
+$--font-primary-200: normal 200 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-200-italic: italic 200 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat Light
+$--font-primary-300: normal 300 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-300-italic: italic 300 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat Regular
+$--font-primary-400: normal 400 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-400-italic: italic 400 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat Medium
+$--font-primary-500: normal 500 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-500-italic: italic 500 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat SemiBold
+$--font-primary-600: normal 600 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-600-italic: italic 600 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat Bold
+$--font-primary-700: normal 700 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-700-italic: italic 700 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat ExtraBold
+$--font-primary-800: normal 800 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-800-italic: italic 800 1.6rem 'Montserrat', Arial, sans-serif;
+
+// Montserrat Black
+$--font-primary-900: normal 900 1.6rem 'Montserrat', Arial, sans-serif;
+$--font-primary-900-italic: italic 900 1.6rem 'Montserrat', Arial, sans-serif;
+
+// --------------------------------------------------------------------------------------------------------
+// Anton
+// --------------------------------------------------------------------------------------------------------
+// Anton Regular
+$--font-secondary-400: normal 400 1.6rem 'Anton', Arial, sans-serif;
